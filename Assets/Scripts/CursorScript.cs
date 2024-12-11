@@ -15,4 +15,14 @@ public class CursorScript : MonoBehaviour
     {
         Cursor.SetCursor(cursors[0], Vector2.zero, CursorMode.ForceSoftware);
     }
+
+    public void OnButton()
+    {
+        Cursor.SetCursor(cursors[1], Vector2.zero, CursorMode.ForceSoftware);
+    }
+
+    public void ClickedButton()
+    {
+        Cursor.SetCursor(cursors[2], Vector2.zero, CursorMode.ForceSoftware);
+    }
 }
