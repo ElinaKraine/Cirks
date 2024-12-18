@@ -25,4 +25,9 @@ public class CursorScript : MonoBehaviour
     {
         Cursor.SetCursor(cursors[2], Vector2.zero, CursorMode.ForceSoftware);
     }
+
+    public void OnObject()
+    {
+        Cursor.SetCursor(cursors[3], Vector2.zero, CursorMode.ForceSoftware);
+    }
 }
