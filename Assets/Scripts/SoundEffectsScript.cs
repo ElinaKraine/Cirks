@@ -23,4 +23,19 @@ public class SoundEfectScript : MonoBehaviour
         audioSource.clip = soundEffects[2];
         audioSource.Play();
     }
+
+    public void CancelButton()
+    {
+        audioSource.PlayOneShot(soundEffects[3]);
+    }
+
+    public void PlayButton()
+    {
+        audioSource.PlayOneShot(soundEffects[4]);
+    }
+
+    public void NameField()
+    {
+        audioSource.PlayOneShot(soundEffects[5]);
+    }
 }

@@ -16,7 +16,7 @@ public class FadeScript : MonoBehaviour
         StartCoroutine(FadeOut(0.15f));
     }
 
-    IEnumerator FadeOut(float seconds)
+    public IEnumerator FadeOut(float seconds)
     {
         for (float a = 1f; a>=-0.05f; a -=0.05f)
         {
@@ -28,10 +28,16 @@ public class FadeScript : MonoBehaviour
         img.raycastTarget = false;
     }
 
-
-
-    void Update()
+    public IEnumerator FadeIn(float seconds)
     {
-        
+        for (float a = 0.05f; a <= 1.05f; a += 0.05f)
+        {
+            tempColor = img.color;
+            tempColor.a = a;
+            img.color = tempColor;
+            yield return new WaitForSeconds(seconds);
+        }
+        img.raycastTarget = true;
     }
+
 }
