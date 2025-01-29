@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
 
-public class NewBehaviourScript : MonoBehaviour
+public class SceneChangeScript : MonoBehaviour
 {
     public FadeScript fadeScript;
 
