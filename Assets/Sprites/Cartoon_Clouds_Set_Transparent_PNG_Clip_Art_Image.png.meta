@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cloud1
+      name: Cloud2
       rect:
         serializedVersion: 2
         x: 146
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b10455398ddf9bb45b5299a8d4234eb1
-      internalID: 1783688155
+      spriteID: 5ae2cb92eb3ffa944a443850549965ef
+      internalID: -175105714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud2
+      name: Cloud1
       rect:
         serializedVersion: 2
         x: 4811
@@ -171,8 +171,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3177a777e35b1c7408e89fd5372ae19b
-      internalID: -1948447038
+      spriteID: e639a1cafa8a8cf48aee11c642541c09
+      internalID: -270646835
       vertices: []
       indices: 
       edges: []
@@ -192,8 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fe583c7c19ccd4469d11324774ced1c
-      internalID: -1136370995
+      spriteID: f46eabbb8f3b5f14abdced48e68e7074
+      internalID: -474710097
       vertices: []
       indices: 
       edges: []
@@ -213,8 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d486924545b363b43916ed9e4f4269de
-      internalID: -306232714
+      spriteID: d329ba10960f92a44b05d116fe107789
+      internalID: 444741979
       vertices: []
       indices: 
       edges: []
@@ -234,8 +234,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0946060c0eaaa24d99c8fc0245d6c18
-      internalID: 1068452494
+      spriteID: 563a0ce08d5b1774f8c2e872769536ee
+      internalID: -1587172539
       vertices: []
       indices: 
       edges: []
@@ -251,11 +251,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cloud1: 1783688155
-      Cloud2: -1948447038
-      Cloud3: -1136370995
-      Cloud4: -306232714
-      Cloud5: 1068452494
+      Cloud1: -270646835
+      Cloud2: -175105714
+      Cloud3: -474710097
+      Cloud4: 444741979
+      Cloud5: -1587172539
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

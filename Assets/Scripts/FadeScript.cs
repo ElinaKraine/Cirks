@@ -8,6 +8,7 @@ public class FadeScript : MonoBehaviour
 {
     Image img;
     Color tempColor;
+    // Start is called before the first frame update
     void Start()
     {
         img = GetComponent<Image>();
@@ -16,9 +17,9 @@ public class FadeScript : MonoBehaviour
         StartCoroutine(FadeOut(0.15f));
     }
 
-    public IEnumerator FadeOut(float seconds)
+   public IEnumerator FadeOut(float seconds)
     {
-        for (float a = 1f; a>=-0.05f; a -=0.05f)
+        for (float a = 1f; a>=-0.05f; a -= 0.05f)
         {
             tempColor = img.color;
             tempColor.a = a;

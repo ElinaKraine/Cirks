@@ -9,14 +9,15 @@ public class AnimationScript : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
+  
 
-    public void RollDice()
+   public void RollDice()
     {
-        animator.SetBool("IsRolling", true);
+        animator.SetBool("isRolling", true);
     }
-
     public void StopRoll()
     {
-        animator.SetBool("IsRolling", false);
+        animator.SetBool("isRolling", false);
     }
+   
 }
