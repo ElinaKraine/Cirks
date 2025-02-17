@@ -9,10 +9,10 @@ Unity 2.5D Circus project
 - [x] Add sounds
 - [x] Add character selection screen
 - [x] Add throwable dice
-- [ ] Add 5 animated characters (total 7)
+- [x] Add 5 animated characters (total 7)
 - [ ] Create settings menue (resolution, volume, etc.)
 - [ ] Leaderboard (name, time, count)
-- [ ] Game logic with movement (waypoints or path findings)
+- [x] Game logic with movement (waypoints or path findings)
 - [ ] Movement with animations
 - [ ] Pause menue (time scale)
-- [ ] Version controle and GitHub repo
+- [x] Version controle and GitHub repo

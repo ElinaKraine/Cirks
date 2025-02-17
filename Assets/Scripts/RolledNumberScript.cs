@@ -7,26 +7,35 @@ using TMPro;
 public class RolledNumberScript : MonoBehaviour
 {
     DiceRollScript diceRollScript;
-    [SerializeField]
-    TMP_Text rolledNumberText;
+    [SerializeField] TMP_Text rolledNumberText;
+    private bool hasMoved = false;
 
-
-    // Start is called before the first frame update
     void Awake()
     {
         diceRollScript = FindObjectOfType<DiceRollScript>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (diceRollScript != null)
-            if (diceRollScript.isLanded)
-                rolledNumberText.text = diceRollScript.diceFaceNum;
-            else
-                rolledNumberText.text = "?";
-        else
-            Debug.LogError("DiceRollScript not found in await scene");
-        
+        if (diceRollScript == null)
+        {
+            Debug.LogError("DiceRollScript not found in the scene");
+            return;
+        }
+
+        if (diceRollScript.isLanded && !hasMoved)
+        {
+            rolledNumberText.text = diceRollScript.diceFaceNum;
+
+            int rolledNumber = int.Parse(diceRollScript.diceFaceNum);
+            FindObjectOfType<PlayerScript>().MovePlayer(rolledNumber);
+
+            hasMoved = true;
+        }
+        else if (!diceRollScript.isLanded)
+        {
+            rolledNumberText.text = "?";
+            hasMoved = false;
+        }
     }
 }
